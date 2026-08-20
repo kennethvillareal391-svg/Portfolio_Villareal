@@ -1,0 +1,182 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2b2c28;
+    color: white;
+}
+
+
+/* NAVBAR */
+
+.nav {
+    background-color: #343434;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.nav a {
+    display: inline-block;
+
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 10px 24px;
+    border-radius: 2px;
+
+    transition: 
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: darkgoldenrod;
+    color: #343434;
+
+    transform: translateY(-2px);
+}
+
+
+/* SCHOOL CONTAINER */
+
+.schools {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* INDIVIDUAL SCHOOL */
+
+.img-container {
+    display: flex;
+
+    /* This vertically centers the text with the image */
+    align-items: center;
+
+    /* Space between image and text */
+    gap: 30px;
+
+    padding: 40px;
+}
+
+/* SCHOOL IMAGE */
+
+.school-image {
+    width: 335px;
+    height: 335px;
+
+    border-radius: 50%;
+
+    /* Makes sure the image fills the circle */
+    object-fit: cover;
+
+    /* Prevents the image from becoming smaller */
+    flex-shrink: 0;
+}
+
+
+/* CONTENT/TEXT  */
+
+.content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.content h2 {
+    margin: 0 0 10px 0;
+
+    color: darkgoldenrod;
+    font-size: 28px;
+}
+
+.content p {
+    margin: 0;
+
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* TABLET */
+
+@media (max-width: 800px) {
+
+    .nav ul {
+        gap: 5px;
+    }
+
+    .nav a {
+        font-size: 15px;
+        padding: 10px 12px;
+    }
+
+    .hero {
+        min-height: 70vh;
+    }
+
+    .profile-container {
+        width: 250px;
+        height: 250px;
+    }
+
+    .text_container {
+        padding: 30px 25px;
+    }
+
+    .text_container p {
+        font-size: 16px;
+    }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .img-container {
+        flex-direction: column;
+        text-align: center;
+
+        padding: 30px 20px;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+
+    .school-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .content h2 {
+        font-size: 24px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+}

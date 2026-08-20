@@ -1,0 +1,149 @@
+/* GENERAL PAGE */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2b2c28;
+}
+
+
+/* NAVBAR */
+
+.nav {
+    background-color: #343434;
+    padding: 12px 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    gap: 20px;
+}
+
+.nav li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 24px;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: darkgoldenrod;
+    color: #343434;
+    transition: 0.3s , ease;
+    transform: translateY(-2px);
+}
+
+
+/* CONTACT CONTAINER */
+
+.contact-container {
+    width: 100%;
+    height: calc(100vh - 74px);
+    display: flex;
+}
+
+
+/* CONTACT PANELS */
+
+.contact-panel {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* LEFT SIDE */
+
+.email-panel {
+    background-color: darkgoldenrod;
+}
+
+
+/* RIGHT SIDE */
+
+.phone-panel {
+    background-color: #2b2c28;
+}
+
+
+/* CONTACT INFORMATION */
+
+.contact-info {
+    text-align: center;
+
+    color: white;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(20px);
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.4s ease,
+        visibility 0.4s ease;
+}
+
+
+/* REVEAL ON HOVER */
+
+.contact-panel:hover .contact-info {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+/* TEXT */
+
+.contact-info h1 {
+    margin-bottom: 25px;
+
+    font-size: 32px;
+
+    color: white;
+}
+
+.contact-info p {
+    margin: 12px 0;
+
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* HOVER EFFECT */
+
+.email-panel:hover {
+    background-color: #c28b05;
+}
+
+.phone-panel:hover {
+    background-color: #343434;
+}
+

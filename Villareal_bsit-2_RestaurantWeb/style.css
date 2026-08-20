@@ -1,0 +1,167 @@
+/*--------GENERAL--------*/
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url("pictures/table.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2{
+    text-align:center;
+    font-size:30px;
+    margin-top:60px;
+    background-color: white;
+}
+
+.subhead1 {
+    background-color: #98FB98;
+    padding: 5px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1.9px;
+    border-color: #2c3034;
+}
+
+.subhead2 {
+    background-color: #2E8B57;
+    padding: 5px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1.9px;
+    border-color: #2c3034;
+}
+
+.subhead3 {
+    background-color: lightskyblue;
+    padding: 5px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1.9px;
+    border-color: #2c3034;
+}
+
+.subhead4 {
+    background-color: #FF5CCD;
+    padding: 5px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1.9px;
+    border-color: #2c3034;
+}
+
+.caption_appe {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #98FB98;
+}
+
+.caption_main {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #2E8B57;
+}
+
+.caption_drinks {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: lightskyblue;
+}
+
+.caption_desserts {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #FF5CCD;
+}
+
+
+/*--------NAVBAR--------*/
+.navBar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#2c3034;
+    padding:18px 40px;
+}
+
+.logo{
+    color:white;
+    font-size:32px;
+    margin:0;
+}
+
+.navBar ul{
+    display:flex;
+    gap:50px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.navBar a{
+    color:white;
+    text-decoration:none;
+    font-size:22px;
+}
+
+.navBar a:hover{
+    color:#ffc107;
+}
+
+/*--------SECTIONS | IMAGES | PRICES--------*/
+section {
+    background-image: url("pictures/bullentin.png");
+}
+
+.row1,
+.row2,
+.row3,
+.row4 {
+    text-align: center;
+}
+
+img {
+    width: 170px;
+    height: 170px;
+    border-radius: 10px;
+    display: block;
+}
+
+.img-container {
+    display: inline-block;
+    background-color: bisque;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
+    transition: all 0.5s ease;
+}
+
+.price {
+    font-size: 16px;
+    color: white;
+    background-color: #353839;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    max-height: 0;  
+    opacity: 0; 
+    overflow: hidden; 
+    transition: max-height 0.5s ease, opacity 0.5s ease, margin-top 0.3s ease;
+}
+
+.img-container:hover .price {
+    max-height: 40px;
+    opacity: 1;
+    margin-top: 10px;
+}

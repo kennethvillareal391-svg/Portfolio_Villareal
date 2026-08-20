@@ -1,0 +1,60 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    background-color: #353839;
+}
+
+h1 /* Header 1 */ {
+    text-align: center;
+    color: azure;
+    background-color: #353839;
+    padding: 20px auto; /* adds spaces inside the header */
+    border-radius: 20px;  /* makes the border smooth */ 
+    transition: 0.3s ease;         
+}
+
+h1:hover {
+    color: #353839;
+    background-color: azure;
+    transition: 0.3s ease;
+}
+
+.row1, .row2, .row3  /* row of each img-container */ {
+    text-align: center; /* display to the boxes in center */   
+}
+
+.img-container {
+    display: inline-block;   /* Keeps the boxes side-by-side */
+    background-color: white;  
+    padding: 15px;  /* spaces inside the boxes */          
+    margin: 20px;   /* spaces outside the boxes */
+    border-radius: 8px;       
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* adds shadow to the boxes */
+    transition: all 0.3s ease; /* For smooth transition, for the container height adjustment */
+}
+
+img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;       
+    display: block; /*  forces the images to start on a new line and stretch to fill the full horizontal width of its container */         
+}
+
+.caption {
+    font-size: 16px;
+    color: white;
+    background-color: #353839;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    max-height: 0;  /* Collapses the space */
+    opacity: 0; /* Makes it completely invisible */
+    overflow: hidden;  /* Keeps hidden text from spilling out */
+    transition: max-height 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease;
+}
+
+.img-container:hover .caption /* Reveal the caption smoothly when the container is hovered */ {
+    max-height: 40px; /* Expands to show the text */
+    opacity: 1;  /* Fades the text in */
+    margin-top: 10px; /* Adds a nice gap below the image */
+}
+
